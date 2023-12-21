@@ -1,3 +1,7 @@
+:root {
+    --font-color: #f5f5f5
+}
+
 body {
     margin: 0;
     display: flex;
@@ -5,15 +9,14 @@ body {
     min-height: 100vh;
     background-color: black;
     box-sizing: border-box;
+    background: linear-gradient(180deg, #140f23, #2c57e2); /* Dark/purple background color */
 }
-
 header {
     padding: 1em;
     padding-right: 100px;
     display: flex;
     justify-content: flex-end;
-    background-color: blueviolet;
-    color: white;
+    color: var(--font-color);
 }
 
 .line-container {
@@ -26,51 +29,68 @@ header {
     margin-bottom: 5px;
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: var(--font-color);
     border-radius: 5px;
 }
 .navbar {
     font-size: 1.5em;
     display: flex;
 }
-
 .navbar.active {
     display: flex;
 }
-
 .navbar div {
     position: relative;
     display: flex;
     align-items: center;
     margin-left: 40px;
 }
-
 .navbar div:hover {
     cursor: pointer;
 }
-
 .navbar div::before {
     content: '';
     position: absolute;
     bottom: -5px;
     left: 0;
     width: 0;
-    height: 3px;
+    height: 4px;
     border-radius: 5px;
     background: red;
-    transition: width 0.5s ease;
+    transition: width 0.4s ease;
 }
-
 .navbar div:hover::before {
     width: 100%;
 }
-
-
 .navbar div img {
     width: 20px;
     height: auto;
     margin-right: 5px;
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px;
+}
+
+.landing-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.landing-text {
+    color: var(--font-color);
+    font-size: 2em;
+    margin-right: 100px;
+}
+.personal-name {
+    margin-bottom: 50px;
+}
+
+
+
 
 @media (max-width: 600px) {
     header {
@@ -90,4 +110,19 @@ header {
         margin-left: 0;
         margin-bottom: 10px;
     }
+    main {
+        flex-direction: column;
+    }
+    .landing-section {
+        flex-direction: column;
+    }
+    .landing-text {
+        font-size: 1.5em;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
