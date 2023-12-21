@@ -39,10 +39,32 @@ header {
 }
 
 .navbar div {
+    position: relative;
     display: flex;
     align-items: center;
     margin-left: 40px;
 }
+
+.navbar div:hover {
+    cursor: pointer;
+}
+
+.navbar div::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    border-radius: 5px;
+    background: red;
+    transition: width 0.5s ease;
+}
+
+.navbar div:hover::before {
+    width: 100%;
+}
+
 
 .navbar div img {
     width: 20px;
