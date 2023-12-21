@@ -56,7 +56,7 @@ header {
     width: 0;
     height: 4px;
     border-radius: 5px;
-    background: red;
+    background: #2245b8;
     transition: width 0.4s ease;
 }
 .navbar div:hover::before {
@@ -84,6 +84,21 @@ main {
     color: var(--font-color);
     font-size: 2em;
     margin-right: 100px;
+}
+.greeting,
+.personal-name,
+.job-title {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+.greeting {
+    animation: slideIn 1s  0.5s forwards;
+}
+.personal-name {
+    animation: slideIn 1s  1.5s forwards;
+}
+.job-title {
+    animation: slideIn 1s  2.5s forwards;
 }
 .personal-name {
     margin-bottom: 50px;
@@ -124,5 +139,11 @@ main {
         justify-content: center;
         align-items: center;
     }
+}
 
+@keyframes slideIn {
+	to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
