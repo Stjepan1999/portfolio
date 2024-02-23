@@ -1,14 +1,25 @@
 import { NavLink } from 'react-router-dom';
+import './Header.scss';
+import { Sidebar } from '../Sidebar/Sidebar';
 
 export const Header = () => {
   return (
-    <header>
-      <div>Stjepan</div>
-      <div>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/about">About</NavLink>
-        <NavLink to="/projects">Projects</NavLink>
-      </div>
+    <header className="header">
+      <NavLink to="/" className="nav-link">
+        Stjepan
+      </NavLink>
+      <nav className="nav-bar">
+        <NavLink to="/" className="nav-link">
+          Home
+        </NavLink>
+        <NavLink to="/about" className="nav-link">
+          About
+        </NavLink>
+        <NavLink to="/projects" className="nav-link">
+          Projects
+        </NavLink>
+      </nav>
+      <Sidebar />
     </header>
   );
 };
