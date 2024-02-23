@@ -15,3 +15,35 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.text-primary-color {
+  color: $primary-color;
+}
+
+.page {
+  padding: 1rem 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  text-align: center;
+}
+
+.button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.button-primary {
+  background-color: $primary-color;
+  color: $text-color;
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 1rem 1rem;
+  }
+}
