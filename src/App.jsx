@@ -5,6 +5,7 @@ import { HomePage } from './pages/HomePage/HomePage';
 import { AboutPage } from './pages/AboutPage/AboutPage';
 import { ProjectsPage } from './pages/ProjectsPage/ProjectsPage';
 import './styles.scss';
+import { Footer } from './components/Footer/Footer';
 
 export const App = () => {
   return (
@@ -15,6 +16,7 @@ export const App = () => {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };
