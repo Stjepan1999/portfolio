@@ -13,9 +13,23 @@
 
 .nav-link {
   text-decoration: none;
+  position: relative;
   color: $text-color;
+
+  &:hover {
+    color: $primary-color;
+  }
 }
 
+.logo {
+  font-family: 'Dancing Script', cursive;
+  font-size: 28px;
+  color: $primary-color;
+
+  &:hover {
+    color: $text-color;
+  }
+}
 .nav-bar {
   display: flex;
   gap: 2rem;
