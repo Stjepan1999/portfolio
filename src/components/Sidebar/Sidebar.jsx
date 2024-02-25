@@ -39,10 +39,10 @@ export const Sidebar = () => {
           <NavLink to="/" className="nav-link">
             Home
           </NavLink>
-          <NavLink to="/shop" className="nav-link">
+          <NavLink to="/about" className="nav-link">
             About
           </NavLink>
-          <NavLink to="/about" className="nav-link">
+          <NavLink to="/projects" className="nav-link">
             Projects
           </NavLink>
         </div>

@@ -8,13 +8,17 @@ export const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-icons-container">
-          <a href="https://github.com/Stjepan1999" target="_blank" className="round-icon-container">
+          <a href="https://github.com/Stjepan1999" target="_blank" className="icon-container round-icon-container">
             <img src={githubIcon} className="small-icon" />
           </a>
-          <a href="mailto:stjepan.franic99@gmail.com" className="round-icon-container">
+          <a href="mailto:stjepan.franic99@gmail.com" className="icon-container round-icon-container">
             <img src={mailIcon} className="small-icon" />
           </a>
-          <a href="https://www.linkedin.com/in/stjepanfranic/" target="_blank" className="round-icon-container">
+          <a
+            href="https://www.linkedin.com/in/stjepanfranic/"
+            target="_blank"
+            className="icon-container round-icon-container"
+          >
             <img src={linkedinIcon} className="small-icon" />
           </a>
         </div>
