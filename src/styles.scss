@@ -33,6 +33,10 @@ body {
   text-align: center;
 }
 
+.text-color-gray {
+  color: $text-color-secondary;
+}
+
 .button {
   border: none;
   padding: 10px 20px;
@@ -43,6 +47,21 @@ body {
 .button-primary {
   background-color: $primary-color;
   color: $text-color;
+}
+
+.round-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: $color-gray;
+  box-shadow: 0px 4px 6px 1px $background-color;
+}
+.small-icon {
+  width: auto;
+  height: 20px;
 }
 
 @media (max-width: 600px) {
