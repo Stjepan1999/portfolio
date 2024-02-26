@@ -36,7 +36,7 @@ body {
 }
 .text-heading {
   font-size: 32px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 .text-description {
   text-align: justify;
@@ -46,7 +46,7 @@ body {
   border: none;
   text-decoration: none;
   padding: 10px 20px;
-  border-radius: 20px;
+  border-radius: 30px;
   font-size: 16px;
 
   &:hover {
@@ -112,4 +112,8 @@ body {
 .medium-icon {
   width: auto;
   height: 60px;
+}
+
+.margin-bottom {
+  margin-bottom: 2rem;
 }
