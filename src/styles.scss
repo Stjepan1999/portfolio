@@ -41,6 +41,13 @@ body {
 .text-description {
   text-align: justify;
 }
+.large-text {
+  font-size: 50px;
+  text-align: center;
+}
+.medium-text {
+  font-size: 26px;
+}
 
 .button {
   border: none;
@@ -48,6 +55,7 @@ body {
   padding: 10px 20px;
   border-radius: 30px;
   font-size: 16px;
+  font-weight: 600;
 
   &:hover {
     cursor: pointer;
@@ -116,4 +124,7 @@ body {
 
 .margin-bottom {
   margin-bottom: 2rem;
+}
+.margin-top {
+  margin-top: 1rem;
 }
