@@ -68,10 +68,10 @@ const Project = ({ title, stack, description, img, liveLink, sourceLink }) => {
         </h4>
         <p className="text-description"> {description}</p>
         <div className="buttons-container">
-          <a className="button button-primary-transparent" href={liveLink} target="_blank">
+          <a className="button button-primary-transparent buttons-container" href={liveLink} target="_blank">
             Live
           </a>
-          <a className="button button-secondary-transparent" href={sourceLink} target="_blank">
+          <a className="button button-secondary-transparent buttons-container" href={sourceLink} target="_blank">
             Source
           </a>
         </div>

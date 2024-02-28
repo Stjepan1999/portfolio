@@ -93,7 +93,13 @@ body {
 
 .buttons-container {
   display: flex;
-  gap: 1rem;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.svg-button {
+  width: 20px;
+  fill: red;
 }
 
 .icon-container {
