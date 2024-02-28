@@ -5,7 +5,7 @@ import { Sidebar } from '../Sidebar/Sidebar';
 export const Header = () => {
   return (
     <header className="header">
-      <NavLink to="/" className="nav-link logo">
+      <NavLink to="/" className="logo">
         Stjepan
       </NavLink>
       <nav className="nav-bar">
