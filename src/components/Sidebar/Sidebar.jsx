@@ -45,6 +45,9 @@ export const Sidebar = () => {
           <NavLink to="/projects" className="nav-link">
             Projects
           </NavLink>
+          <NavLink to="/resume" className="nav-link">
+            Resume
+          </NavLink>
         </div>
       </div>
     </>
