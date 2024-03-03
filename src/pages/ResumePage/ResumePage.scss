@@ -1,0 +1,21 @@
+@import '../../variables';
+
+.resume-page {
+  padding: 1rem 4rem;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  gap: 20px;
+}
+.image-container {
+  max-width: 700px;
+}
+.resume-image {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .resume-page {
+    padding: 1rem 1rem;
+  }
+}
