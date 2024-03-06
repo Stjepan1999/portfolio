@@ -18,7 +18,7 @@ export const ProjectsPage = () => {
             description="A React web application that simulates an ecommerce website. It utilizes the Fake Store API to fetch product data and allows users to browse products, add items to their shopping cart, and view information about the store."
             img={ecomImage}
             liveLink="https://ecomwebsite-stjepan.netlify.app/"
-            sourceLink="https://github.com/Stjepan1999/cv-builder"
+            sourceLink="https://github.com/Stjepan1999/ecommerce-website"
           />
           <Project
             title="CV Builder"
@@ -26,7 +26,7 @@ export const ProjectsPage = () => {
             description="A React web application for creating resumes. Users can download their CV in a formatted PDF file. Users can add and edit sections such as personal info, contact info, education and experience section, and skills."
             img={cvbuilderImage}
             liveLink="https://jade-gumdrop-ae72b5.netlify.app/"
-            sourceLink="https://github.com/Stjepan1999/ecommerce-website"
+            sourceLink="https://github.com/Stjepan1999/cv-builder"
           />
           <Project
             title="Weather App"
